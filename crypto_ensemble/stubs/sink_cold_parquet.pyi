@@ -1,0 +1,6 @@
+from pathlib import Path
+from typing import Iterable
+
+class ParquetSink:
+    def __init__(self, base_dir: str) -> None: ...
+    async def write_batch(self, topic: str, records: Iterable[dict]) -> Path: ...

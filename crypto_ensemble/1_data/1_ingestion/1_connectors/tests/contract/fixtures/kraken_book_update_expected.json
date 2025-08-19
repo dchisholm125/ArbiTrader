@@ -1,0 +1,24 @@
+{
+  "schema": "RawFrame.v2",
+  "venue": "kraken",
+  "channel": "orderbook.l2",
+  "stream": "book-25:XBT/USD",
+  "payload": [
+    42,
+    {
+      "a": [["70251.0","0.900","1766097900.100"]],
+      "b": [["70249.5","0.700","1766097900.100"]]
+    },
+    "book-25",
+    "XBT/USD"
+  ],
+  "venue_ts": 1766097900.100,
+  "recv_ts": 1766097900.130,
+  "seq": null,
+  "checksum": null,
+  "staleness_ms": 30,
+  "connection_id": "test-conn",
+  "trace_id": "test-trace",
+  "size_bytes": 340,
+  "codec": "none"
+}

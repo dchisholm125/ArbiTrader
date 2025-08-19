@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "core.schemas.RawFrame.v2",
+  "type": "object",
+  "required": ["schema","venue","channel","stream","payload","venue_ts","recv_ts","staleness_ms","connection_id","trace_id","size_bytes","codec"],
+  "properties": {
+    "schema": {"const":"RawFrame.v2"},
+    "venue": {"type":"string"},
+    "channel": {"type":"string"},
+    "stream": {"type":"string"},
+    "payload": {"type":"object"},
+    "venue_ts": {"type":"number"},
+    "recv_ts": {"type":"number"},
+    "seq": {"type":["integer","null"]},
+    "checksum": {"type":["string","null"]},
+    "staleness_ms": {"type":"integer","minimum":0},
+    "connection_id": {"type":"string"},
+    "trace_id": {"type":"string"},
+    "size_bytes": {"type":"integer","minimum":0},
+    "codec": {"enum":["none","gzip","zstd"]}
+  }
+}

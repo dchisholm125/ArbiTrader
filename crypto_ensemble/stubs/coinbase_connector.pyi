@@ -1,0 +1,6 @@
+from typing import Any, Dict
+
+class CoinbaseConnector:
+    venue: str
+    def __init__(self, publisher: Any, config: Dict[str, Any]) -> None: ...
+    def parse_message(self, msg: Dict[str, Any]) -> Dict[str, Any]: ...

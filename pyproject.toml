@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+mypy_path = ["crypto_ensemble/stubs"]
+files = ["crypto_ensemble/aliases", "crypto_ensemble/core", "crypto_ensemble/6_monitoring"]
+
+[[tool.mypy.overrides]]
+module = ["redis.*", "pyarrow.*", "websockets.*", "yaml", "fastjsonschema"]
+ignore_missing_imports = true
+
+[tool.pydocstyle]
+convention = "pep257"
+add-ignore = ["D100","D101","D102","D103","D104"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["crypto_ensemble"]

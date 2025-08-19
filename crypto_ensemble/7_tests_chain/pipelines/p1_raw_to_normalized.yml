@@ -1,0 +1,6 @@
+inputs:
+  - raw/orderbook.json
+  - raw/trade.json
+steps:
+  - normalizer_orderbook
+  - normalizer_trade

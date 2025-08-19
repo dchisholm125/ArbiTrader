@@ -1,0 +1,16 @@
+from dataclasses import dataclass
+from pathlib import Path
+from typing import List, Protocol
+
+class Subscriber(Protocol):
+    async def recv(self, topic: str) -> bytes: ...
+
+@dataclass
+class InMemorySubscriber:
+    queue: List[bytes]
+    async def recv(self, topic: str) -> bytes: ...
+
+async def capture(
+    sub: Subscriber, topic: str, out: Path, n: int, schema: str | None = ...
+) -> None: ...
+def main(argv: list[str] | None = ...) -> None: ...
