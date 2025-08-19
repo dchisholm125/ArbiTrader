@@ -1,0 +1,27 @@
+{
+  "schema": "RawFrame.v2",
+  "venue": "coinbase",
+  "channel": "trades.tape",
+  "stream": "matches:BTC-USD",
+  "payload": {
+    "type": "match",
+    "trade_id": 123456789,
+    "sequence": 548902313,
+    "maker_order_id": "abc-123",
+    "taker_order_id": "xyz-456",
+    "time": "2025-08-18T01:31:30.123Z",
+    "product_id": "BTC-USD",
+    "size": "0.010",
+    "price": "70250.35",
+    "side": "buy"
+  },
+  "venue_ts": 1766098290.123,
+  "recv_ts": 1766098290.139,
+  "seq": 548902313,
+  "checksum": null,
+  "staleness_ms": 16,
+  "connection_id": "test-conn",
+  "trace_id": "test-trace",
+  "size_bytes": 520,
+  "codec": "none"
+}

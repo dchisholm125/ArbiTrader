@@ -1,0 +1,21 @@
+{
+  "schema": "RawFrame.v2",
+  "venue": "coinbase",
+  "channel": "orderbook.l2",
+  "stream": "level2:BTC-USD",
+  "payload": {
+    "type": "snapshot",
+    "product_id": "BTC-USD",
+    "bids": [["70249.55","2.100"], ["70249.00","0.350"]],
+    "asks": [["70250.80","1.750"], ["70251.10","0.420"]]
+  },
+  "venue_ts": 1766098000.000,
+  "recv_ts": 1766098000.060,
+  "seq": null,
+  "checksum": null,
+  "staleness_ms": 60,
+  "connection_id": "test-conn",
+  "trace_id": "test-trace",
+  "size_bytes": 420,
+  "codec": "none"
+}

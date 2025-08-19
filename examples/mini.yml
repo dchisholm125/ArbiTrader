@@ -1,0 +1,12 @@
+venue: binanceus
+symbols: ["BTCUSDT", "ETHUSDT"]
+streams:
+  orderbook:
+    enabled: true
+    mode: diff
+    interval_ms: 100
+  trades:
+    enabled: true
+    channel: aggTrade
+output:
+  stdout: true

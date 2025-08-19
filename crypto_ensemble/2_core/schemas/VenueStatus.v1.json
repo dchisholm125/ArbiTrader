@@ -1,0 +1,14 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"core.schemas.VenueStatus.v1",
+  "type":"object",
+  "required":["ts","venue","status"],
+  "properties":{
+    "ts":{"type":"string","format":"date-time"},
+    "venue":{"type":"string"},
+    "status":{"enum":["up","degraded","down","maintenance"]},
+    "api_latency_ms":{"type":["number","null"]},
+    "rate_limit_rem":{"type":["integer","null"]},
+    "notes":{"type":["string","null"]}
+  }
+}

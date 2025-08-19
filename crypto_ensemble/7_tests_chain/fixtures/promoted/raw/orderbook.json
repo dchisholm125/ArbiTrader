@@ -1,0 +1,1 @@
+{"schema":"RawFrame.v2","venue":"binanceus","channel":"orderbook","stream":"btcusdt@depth","payload":{"s":"BTCUSDT","b":[],"a":[],"u":1},"venue_ts":0,"recv_ts":0,"seq":null,"checksum":null,"staleness_ms":0,"connection_id":"1","trace_id":"t","size_bytes":1,"codec":"none"}

@@ -1,0 +1,18 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"core.schemas.Tick.v1",
+  "type":"object",
+  "required":["ts","asset","venue","bid","ask","mid","last","vol","spread_bps","staleness_ms"],
+  "properties":{
+    "ts":{"type":"string","format":"date-time"},
+    "asset":{"type":"string"},
+    "venue":{"type":"string"},
+    "bid":{"type":"number"},
+    "ask":{"type":"number"},
+    "mid":{"type":"number"},
+    "last":{"type":"number"},
+    "vol":{"type":"number"},
+    "spread_bps":{"type":"number"},
+    "staleness_ms":{"type":"integer","minimum":0}
+  }
+}

@@ -1,0 +1,5 @@
+inputs:
+  - normalized/orderbook.json
+  - normalized/trade.json
+steps:
+  - tick_composer

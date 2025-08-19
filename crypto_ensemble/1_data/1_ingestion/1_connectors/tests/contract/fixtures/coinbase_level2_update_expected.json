@@ -1,0 +1,21 @@
+{
+  "schema": "RawFrame.v2",
+  "venue": "coinbase",
+  "channel": "orderbook.l2",
+  "stream": "level2:BTC-USD",
+  "payload": {
+    "type": "l2update",
+    "product_id": "BTC-USD",
+    "time": "2025-08-18T01:31:30.200Z",
+    "changes": [["buy","70249.55","2.000"], ["sell","70250.90","1.600"]]
+  },
+  "venue_ts": 1766098290.200,
+  "recv_ts": 1766098290.230,
+  "seq": null,
+  "checksum": null,
+  "staleness_ms": 30,
+  "connection_id": "test-conn",
+  "trace_id": "test-trace",
+  "size_bytes": 300,
+  "codec": "none"
+}

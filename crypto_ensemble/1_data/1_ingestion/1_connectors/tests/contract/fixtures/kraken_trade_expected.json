@@ -1,0 +1,21 @@
+{
+  "schema": "RawFrame.v2",
+  "venue": "kraken",
+  "channel": "trades.tape",
+  "stream": "trade:XBT/USD",
+  "payload": [
+    84,
+    [["70249.90","0.015","1766097900.123","s","l",""]],
+    "trade",
+    "XBT/USD"
+  ],
+  "venue_ts": 1766097900.123,
+  "recv_ts": 1766097900.147,
+  "seq": null,
+  "checksum": null,
+  "staleness_ms": 24,
+  "connection_id": "test-conn",
+  "trace_id": "test-trace",
+  "size_bytes": 280,
+  "codec": "none"
+}

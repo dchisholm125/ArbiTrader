@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"core.schemas.Trade.v1",
+  "type":"object",
+  "required":["ts","asset","venue","px","qty","side"],
+  "properties": {
+    "ts":{"type":"string","format":"date-time"},
+    "asset":{"type":"string"},
+    "venue":{"type":"string"},
+    "px":{"type":"number"},
+    "qty":{"type":"number"},
+    "side":{"enum":["buy","sell"]},
+    "agg_id":{"type":["string","null"]}
+  }
+}

@@ -1,0 +1,6 @@
+from typing import Any, Dict, List
+
+class KrakenConnector:
+    venue: str
+    def __init__(self, publisher: Any, config: Dict[str, Any]) -> None: ...
+    def parse_message(self, msg: List[Any]) -> Dict[str, Any]: ...
